@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Die Sprache der Webseite ist Deutsch. -->
+<head>
+    <meta charset="UTF-8"> <!-- UTF-8 Zeichensatz für die Kodierung, um alle gängigen Zeichen darzustellen. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Design für verschiedene Gerätegrößen. -->
+    <title>Frohe Weihnachten</title> <!-- Titel der Webseite, der in der Browser-Registerkarte angezeigt wird. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Einbindung von Bootstrap für vorgefertigte Stile und Layouts. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Externe CSS-Datei für benutzerdefinierte Stile. -->
+</head>
+<body>
+    <div class="container text-center"> <!-- Zentrales Layout für Inhalte, um eine mittige Darstellung zu gewährleisten. -->
+        <h1 class="mt-5">Frohe Weihnachten 2024!</h1> <!-- Überschrift mit einer Begrüßung zur Weihnachtszeit. -->
+        <p class="lead">Genießen Sie die festliche Stimmung!</p> <!-- Untertitel mit einer festlichen Botschaft. -->
+        <button id="toggleSnow" class="btn btn-primary">Schneeflocken starten/stoppen</button> <!-- Button zum Aktivieren/Deaktivieren von Schneeflocken. -->
+        <button id="toggleMusic" class="btn btn-success">Musik starten/stoppen</button> <!-- Button zum Starten/Stoppen der Musik. -->
+        <button id="switchMusic" class="btn btn-warning">Musik wechseln</button> <!-- Button zum Wechseln des Musikstücks. -->
+        <audio id="music" src="christmas-music-ringing-the-starry-night-272617.mp3" loop></audio> <!-- Audio-Element für die Hintergrundmusik, das im Loop abgespielt wird. -->
+    </div>
+    <div class="snowflakes" aria-hidden="true"> <!-- Container für visuelle Schneeflocken-Effekte. -->
+        <div class="snowflake">❄</div> <!-- Einzelne Schneeflocke. -->
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+    </div>
+    <div class="festive-icons"></div> <!-- Platzhalter für weitere festliche Icons. -->
+    <script src="script.js"></script> <!-- Externe JavaScript-Datei für interaktive Funktionen. -->
+</body>
+</html>

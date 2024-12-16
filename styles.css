@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f8ff; /* Helle Hintergrundfarbe. */
+    animation: backgroundChange 10s infinite alternate; /* Farbwechsel alle 10 Sekunden. */
+}
+
+@keyframes backgroundChange { /* Keyframes für sanften Farbverlauf. */
+    0% { background-color: #ff9a9e; } /* Anfangsfarbe. */
+    50% { background-color: #fad0c4; } /* Mittelwert des Farbverlaufs. */
+    100% { background-color: #fad0c4; } /* Endfarbe. */
+}
+
+.snowflakes {
+    position: fixed; /* Position über dem gesamten Fenster. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Interaktionen verhindern. */
+    overflow: hidden; /* Elemente außerhalb des Containers ausblenden. */
+}
+
+.snowflake {
+    position: absolute; /* Absolute Positionierung. */
+    top: -10%; /* Startposition oberhalb des Fensters. */
+    color: white; /* Weiße Schneeflocken. */
+    font-size: 20px; /* Standardgröße. */
+    animation: fall linear infinite; /* Animation für das Fallen. */
+}
+
+.festive-icons {
+    position: fixed; /* Symbole an fixer Position. */
+    top: 20%; /* Vertikale Ausrichtung. */
+    left: 50%; /* Horizontale Ausrichtung. */
+    transform: translateX(-50%); /* Zentrieren. */
+    display: flex; /* Flexbox für Layout. */
+    justify-content: center; /* Zentrieren der Inhalte. */
+    flex-wrap: wrap; /* Inhalte umbrechen. */
+}
+
+.festive-icon {
+    width: 150px; /* Breite eines Symbols. */
+    height: 150px; /* Höhe eines Symbols. */
+    margin: 10px; /* Abstand zwischen Symbolen. */
+    opacity: 0; /* Unsichtbar im Initialzustand. */
+    transition: opacity 1s; /* Übergangseffekt für Sichtbarkeit. */
+}
+
+@keyframes fall { /* Keyframes für fallende Schneeflocken. */
+    0% { transform: translateY(0); } /* Anfangsposition. */
+    100% { transform: translateY(100vh); } /* Ende des Falls. */
+}
