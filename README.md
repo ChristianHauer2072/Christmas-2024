@@ -1,0 +1,1 @@
+Erstellt gemeinsam eine winterliche HTML-Webseite, die eine weihnachtliche Grußbotschaft enthält und mit animierten Schneefl ocken und festlichenSymbolen wie Sternen und kleinen Weihnachtsbäumen für eine festliche Atmosphäre sorgt.
